@@ -1,50 +1,55 @@
 <template>
      <ul class="sidenav">
-              <li title="Basic Startup" class="sidelist parent active">
-                <a href="list.html">Basic Startup</a>
+              <li class="sidelist parent">
+                <router-link to="Overview">مرور کلی</router-link>
                 <ul>
                   <li class="sidelist">
-                    <a href="single.html">Elements</a>
+                    <router-link to="/Overview/Start">شروع</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <a href="single.html">Installation</a>
+                    <router-link to="/Overview/Classes">کلاسهای CSS</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <a href="single.html">Configuration</a>
+                    <router-link to="/Overview/Modifiers">کلاسهای اصلاح کننده</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <a href="single.html">Customization</a>
+                    <router-link to="/Overview/Modular">ماژولار</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <a href="single.html">Requerments</a>
+                    <router-link to="/Overview/Responsiveness">ریسپانسیو</router-link>
+                  </li>
+                  <li class="sidelist">
+                    <router-link to="/Overview/colors">رنگ ها</router-link>
+                  </li>
+                  <li class="sidelist">
+                    <router-link to="/Overview/functions">توابع</router-link>
+                  </li>
+                  <li class="sidelist">
+                    <router-link to="/Overview/mixins">ترکیب ها</router-link>
                   </li>
                 </ul>
               </li>
-              <li class="sidelist">
-                <a href="list.html">Account Bill</a>
+              <li class="sidelist parent">
+                <router-link to="/Customize">شخصی سازی</router-link>
                 <ul>
                   <li class="sidelist">
-                    <a href="single.html">Linux</a>
+                    <router-link to="/Customize/Concepts">مفاهیم</router-link>
                   </li>
-
                   <li class="sidelist">
-                    <a href="single.html">Mac OS</a>
+                    <router-link to="/Customize/Variables">متغیرها</router-link>
                   </li>
-
                   <li class="sidelist">
-                    <a href="single.html">Routing</a>
+                    <router-link to="/Customize/WithNodeSass">همراه با node-sass</router-link>
                   </li>
-
                   <li class="sidelist">
-                    <a href="single.html">Ubuntu</a>
+                    <router-link to="/Customize/WithSassCli"> همراه با sass-cli</router-link>
                   </li>
-
                   <li class="sidelist">
-                    <a href="single.html">Windows</a>
+                    <router-link to="/Customize/WithWebpack">همراه با webpack</router-link>
                   </li>
                 </ul>
               </li>

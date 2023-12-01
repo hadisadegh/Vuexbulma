@@ -21,13 +21,12 @@ import Navigation from "./components/Navigation.vue";
           <!-- body -->
           <div class="column is-8-desktop is-12-tablet">
             <div class="px-4">
-              <h2 class="mb-4 has-text-weight-medium">Basic Startup</h2>
+              <h2 class="mb-4 has-text-weight-medium"></h2>
               <!-- main content -->
-           
-                <RouterView />
-             
-              <!-- navigation -->
-              <Navigation></Navigation>
+
+              <RouterView />
+
+              <!-- main content -->
             </div>
           </div>
         </div>
