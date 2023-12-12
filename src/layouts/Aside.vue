@@ -1,36 +1,31 @@
 <template>
      <ul class="sidenav">
               <li class="sidelist parent">
-                <router-link to="Overview">مرور کلی</router-link>
+                <router-link to="/Overview">Überblick</router-link>
                 <ul>
                   <li class="sidelist">
-                    <router-link to="/Overview/Start">شروع</router-link>
+                    <router-link to="/Overview/Start">Start</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <router-link to="/Overview/Classes">کلاسهای CSS</router-link>
+                    <router-link to="/Overview/Classes">CSS Klassen</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <router-link to="/Overview/Modifiers">کلاسهای اصلاح کننده</router-link>
+                    <router-link to="/Overview/Modifiers">Syntax der Modifikatoren</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <router-link to="/Overview/Modular">ماژولار</router-link>
+                    <router-link to="/Overview/Modular">Modularität</router-link>
                   </li>
 
                   <li class="sidelist">
-                    <router-link to="/Overview/Responsiveness">ریسپانسیو</router-link>
+                    <router-link to="/Overview/Responsiveness">Empfänglichkeit</router-link>
                   </li>
                   <li class="sidelist">
-                    <router-link to="/Overview/colors">رنگ ها</router-link>
+                    <router-link to="/Overview/Colors">Farben</router-link>
                   </li>
-                  <li class="sidelist">
-                    <router-link to="/Overview/functions">توابع</router-link>
-                  </li>
-                  <li class="sidelist">
-                    <router-link to="/Overview/mixins">ترکیب ها</router-link>
-                  </li>
+                 
                 </ul>
               </li>
               <li class="sidelist parent">

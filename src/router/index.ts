@@ -5,12 +5,16 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: () => import('../views/Overview/Index.vue'),
+      component: () => import('../views/Overview/Overview.vue'),
     },
     {
       path: '/Overview',
       component: () => import('../views/Overview/Index.vue'),
       children: [
+        {
+          path: '',
+          component: () => import('../views/Overview/Overview.vue')
+        },
         {
           path: 'Start',
           component: () => import('../views/Overview/Start.vue')
@@ -35,20 +39,18 @@ const router = createRouter({
           path: 'Colors',
           component: () => import('../views/Overview/Colors.vue')
         },
-        {
-          path: 'Functions',
-          component: () => import('../views/Overview/Functions.vue')
-        },
-        {
-          path: 'Mixins',
-          component: () => import('../views/Overview/Mixins.vue')
-        },
+       
+        
       ],
     },
     {
       path: '/Customize',
       component: () => import('../views/Customize/Index.vue'),
       children: [
+        {
+          path: '',
+          component: () => import('../views/Customize/Customize.vue')
+        },
         {
           path: 'Concepts',
           component: () => import('../views/Customize/Concepts.vue')
@@ -75,6 +77,10 @@ const router = createRouter({
       path: '/Columns',
       component: () => import('../views/Columns/Index.vue'),
       children: [
+        {
+          path: '',
+          component: () => import('../views/Columns/Columns.vue')
+        },
         {
           path: 'Basics',
           component: () => import('../views/Columns/Basics.vue')
@@ -105,6 +111,10 @@ const router = createRouter({
       path: '/Form',
       component: () => import('../views/Form/Index.vue'),
       children: [
+        {
+          path: '',
+          component: () => import('../views/Form/Form.vue')
+        },
         {
           path: 'general',
           component: () => import('../views/Form/general.vue')
@@ -139,6 +149,10 @@ const router = createRouter({
       path: '/Elements',
       component: () => import('../views/Elements/Index.vue'),
       children: [
+        {
+          path: '',
+          component: () => import('../views/Elements/Elements.vue')
+        },
         {
           path: 'Block',
           component: () => import('../views/Elements/Block.vue')
@@ -194,6 +208,10 @@ const router = createRouter({
       component: () => import('../views/Components/Index.vue'),
       children: [
         {
+          path: '',
+          component: () => import('../views/Components/Components.vue')
+        },
+        {
           path: 'Breadcrumb',
           component: () => import('../views/Components/Breadcrumb.vue')
         },
@@ -233,6 +251,30 @@ const router = createRouter({
           path: 'Tabs',
           component: () => import('../views/Components/Tabs.vue')
         },
+      ]
+    },
+    {
+      path: '/Utilities',
+      component: () => import('../views/Utilities/Index.vue'),
+      children: [
+        {
+          path: '',
+          component: () => import('../views/Utilities/Utilities.vue')
+        },
+       
+       
+      ]
+    },
+    {
+      path: '/Layout',
+      component: () => import('../views/Layout/Index.vue'),
+      children: [
+        {
+          path: '',
+          component: () => import('../views/Layout/Layout.vue')
+        },
+       
+       
       ]
     },
   ]

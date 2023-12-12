@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import Header from "./layouts/Header.vue";
-import Aside from "./layouts/Aside.vue";
-import Footer from "./layouts/Footer.vue";
-import Navigation from "./components/Navigation.vue";
+import { RouterLink, RouterView } from 'vue-router'
+import Header from './layouts/Header.vue'
+import Aside from './layouts/Aside.vue'
+import Footer from './layouts/Footer.vue'
+import Navigation from './components/Navigation.vue'
 </script>
 
 <template>
@@ -24,7 +24,9 @@ import Navigation from "./components/Navigation.vue";
               <h2 class="mb-4 has-text-weight-medium"></h2>
               <!-- main content -->
 
-              <RouterView />
+              <div class="bd-docs-main">
+                <RouterView />
+              </div>
 
               <!-- main content -->
             </div>

@@ -1,6 +1,8 @@
 @import './base.css';
 /* @import './css/style.css'; */
 @import './css/bulma.min.css';
+@import url('../assets/css/bulma-docs.min.css');
+@import url('../assets/fonticon/css/all.min.css');
 /* #app {
   max-width: 1280px;
   margin: 0 auto;
